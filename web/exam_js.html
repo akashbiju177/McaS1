@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var i=0;
+        function exam()
+        {
+        if(document.f1.n1[0].checked)
+        i=i+1;
+        if(document.f1.n2[0].checked)
+        i=i+1;
+        alert("your score is "+i+"/2");
+        }
+    </script>
+</head>
+<body>
+    <h1>Online Exam</h1>
+    <form namevv="f1">
+    <h3>Spelling of 2</h3>
+    <input type="radio" name="n1" value="two">Two <input type="radio" name="n1" value="too">Too<br>
+    <h3>which is odd number</h3>
+    <input type="radio" name="n2" value="1">1 <input type="radio" name="n2" value="2">2<br>
+    <input type="submit" onclick="exam()">
+    </form>
+</body>
+</html>
